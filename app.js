@@ -7,8 +7,14 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var shops = require('./routes/shops');
 
 var app = express();
+
+//connect to mongoose db
+var mongoose = require('mongoose');
+var config = require('./config/globalVars.js');
+mongoose.connect(config.db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use(shops);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
