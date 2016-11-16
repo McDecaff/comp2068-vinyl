@@ -1,4 +1,4 @@
-/*!
+f/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -4958,9 +4958,13 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   color: inherit;
   background-color: #eee;
+  text-align: center;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5067,9 +5071,9 @@ a.thumbnail.active {
   color: #2b542c;
 }
 .alert-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: darkgrey;
+  background-color: black;
+  border-color: grey;
 }
 .alert-info hr {
   border-top-color: #a6e1ec;
